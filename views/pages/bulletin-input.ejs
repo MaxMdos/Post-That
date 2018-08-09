@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <% include ../partials/head %>
+<body>
+        <% include ../partials/navigation %>
+    <form action="/bullet-input" method="POST">
+        <div>
+            <label for="title">Title: </label>
+        </div>
+        <div>
+            <input type="text" name="title">
+        </div>
+        <div>
+            <label for="body">Body: </label>
+        </div>
+        <div>
+            <textarea name="body" id="text-body" cols="40" rows="20"></textarea>
+        </div>
+        <div>
+            <input type="submit" name="submit">
+        </div>
+    </form>
+</body>
+</html>

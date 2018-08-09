@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+            <% include ../partials/head %>
+<body>
+    <% include ../partials/navigation %>
+    <div id="container">
+        <% for(var i = 0; i < result.rows.length; i++) { %>
+            <h3>ID: </h3>
+            <p><%= result.rows[i].id %></p>
+            <h3>Title: </h3>
+            <p><%= result.rows[i].title %></p>
+            <h3>Body: </h3>
+            <p><%= result.rows[i].body %></p>
+        <% } %>
+    </div>
+</body>
+</html>
